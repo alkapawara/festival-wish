@@ -535,7 +535,7 @@ svg.rotate-center {
     /* position: absolute;
     transform: rotate(-38deg);
     top: 8%; */
-    background-color: #ffefa1;
+    /* background-color: #ffefa1; */
     margin: 0;
     padding: 0;
     /* left: -2%; */
@@ -590,7 +590,7 @@ svg.rotate-center {
     .divset {
         /* overflow: hidden; */
         height: 300px;
-        width: 300px;
+        width: 100%;
         /* margin: -20px auto; */
         position: relative;
         margin: 20px auto;
