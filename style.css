@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%; /* Ensures the gradient covers the entire page */
+}
+
+body {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#38438b), color-stop(#944b94), color-stop(#d75a88), color-stop(#ff7e71), color-stop(#ffb25f), to(#ffeb68));
+  background-image: -webkit-linear-gradient(left bottom, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+  background-image: -o-linear-gradient(left bottom, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+  background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%; /* Ensures the gradient covers the entire page even if the content is short */
+  background-attachment: fixed;
+}
+
+:root {
+    --dark-blue: #073350;
+    --light-golden: #ffda74;
+    --transparent-golden: #ffda7437;
+}
+
+section {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    color: white;
+    /* background-color: var(--dark-blue); */
+}
+
+.title-div{
+  padding-bottom: 20px;
+}
+.title {
+  font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.45rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.login {
+    margin: 1.5rem;
+    width: 500px;
+    margin: auto;
+    border: 2px solid wheat;
+    padding: 24px;
+    background: #ffffff;
+}
+
+.login a {
+    color: var(--light-golden);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login a:hover,
+.login a:focus {
+    color: #351a2a;
+    text-decoration: underline wavy var(--light-golden);
+}
+
+.login header {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--light-golden);
+    font-family: 'Monoton', cursive;
+    margin-bottom: 2.5rem;
+}
+
+.login .field {
+    margin-block: 1.5rem;
+}
+
+.login label {
+    font-size: 1.075rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #351a2a;
+}
+
+.login input {
+    display: block;
+    padding: 0.75rem 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: #351a2a;
+    /* max-width: 100%; */
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #351a2a;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login input:hover,
+.login input:focus {
+    color: #351a2a;
+    background-color: var(--transparent-golden);
+    border-color: var(--light-golden);
+}
+
+.login .reset {
+    text-align: right;
+}
+
+.login button {
+    padding: 0.55rem 2rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid var(--light-golden);
+    margin-top: 1.5rem;
+    background-color: var(--light-golden);
+    color: var(--dark-blue);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login button:hover,
+.login button:focus {
+    background-color: var(--transparent-golden);
+    color: var(--light-golden);
+}
+
+.login .create {
+    margin-top: 2.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.login a {
+    display: block;
+}
+
+
+/* -------------------------------------------wish page css start --------------------------------------------*/
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.animated-text {
+
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.divset
+{
+  /* overflow: hidden; */
+    height: 800px;
+    width: 800px;
+    /* margin:-20px auto; */
+    position: relative;
+    overflow: hidden;
+    margin: -61px auto;
+    /* background-color: #073350; */
+    background-color: #e904042b;
+    margin: auto;
+    box-shadow: 0px 0px 6px 1px #410d0d6b;
+}
+
+
+.make-link {
+  position: absolute;
+  transform: rotate(-38deg);
+  top: 4%;
+  background-color: #ffefa1;
+  margin: 0;
+  padding: 0;
+  left: -1%;
+}
+.make-link h2 {
+  margin: 0;
+  padding: 2px 6px;
+  font-size: 16px;
+  color: #a32c45;
+}
+
+
+.donate-link {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 2%;
+  background-color: #ffefa1;
+  margin: 0;
+  padding: 0;
+  right: -1%;
+}
+.donate-link h2 {
+  margin: 0;
+  padding: 2px 6px;
+  font-size: 16px;
+  color: #a32c45;
+}
+svg.rotate-center {
+  overflow: hidden!important;
+  /* background: red; */
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 4s linear infinite both;
+	        animation: rotate-center 4s linear infinite both;
+}
+
+.img_one
+{
+  position: absolute;
+   top: 30%;
+   left: 50%;
+   width: 700px;
+   height: 700px;
+   /* margin-top: -250px; 
+   margin-left: -250px; */
+}
+
+.img_two {
+  position: absolute;
+  top: 17%;
+  left: 17%;
+  width: 530px;
+  height: 530px;
+  transform: translate(3%, 0%);
+}
+
+
+.img_three {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 470px;
+  height: 470px;
+  transform: translate(0%, 0%);
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-9-11 11:43:33
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+
+.rotate-center-sec {
+	-webkit-animation: rotate-center-re 6s linear infinite reverse both;
+	        animation: rotate-center-re 6s linear infinite reverse both;
+}
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-9-11 12:59:11
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center-re {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center-re {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+
+.rotate-center-third {
+	-webkit-animation: rotate-center-th 10s linear infinite both;
+	        animation: rotate-center-th 10s linear infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-9-11 13:11:6
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center-th {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center-th {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+
+.ganeshJee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  margin: auto;
+  color: #4d458d;
+  background-color: #ffdb65;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* wish page css end */
+@media only screen and (max-width: 1024px) {
+   
+}
+/* ----------------------------------------------css for ipad --------------------------------- */
+@media only screen and (max-width: 768px) {
+    .login {
+        margin: 1.5rem;
+        width: 500px;
+        margin: auto;
+        border: 2px solid wheat;
+        padding: 24px;
+        background: #351a2a;
+    }
+    .title {
+      font-family: "Agbalumo", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2rem;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-align: center;
+      color: #ffffff;
+      line-height: 1.2;
+  }
+    .divset {
+      /* overflow: hidden; */
+      height: 721px;
+      width: 721px;
+      /* margin: -20px auto; */
+      position: relative;
+      margin: 75px auto;
+      overflow: hidden;
+  }
+
+    .img_one
+{
+  position: absolute;
+   top: 30%;
+   left: 50%;
+   width: 700px;
+   height: 700px;
+   margin-top: -250px; 
+   margin-left: -250px;
+}
+svg.rotate-center {
+  /* display: none; */
+  position: absolute;
+  top: 0%;
+  width: 100%;
+}
+    
+.img_two {
+  position: absolute;
+  top: 13%;
+  left: 14%;
+  width: 530px;
+  height: 530px;
+  transform: translate(0%, 0%);
+  
+}
+    .img_three {
+      position: absolute;
+      top: 16%;
+      left: 16%;
+      width: 470px;
+      height: 470px;
+  }
+    .ganeshJee {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      /* width: 100%;
+        height: 100%; */
+      /* margin-top: -513px; */
+      /* margin-left: -360px; */
+      transform: translate(-50%, -50%);
+
+  }
+}
+
+
+/* --------------------------------------------------mobile screen css start -----------------------*/
+
+@media only screen and (max-width: 600px) {
+  svg{width:750px;
+    left:0; position: absolute;
+    margin-left:-60%;
+    margin-top:10%;
+    top:0;
+  
+  }
+}
+@media only screen and (max-width:576px) {
+    .login {
+        margin: 1.5rem;
+        width: auto;
+        margin: auto;
+        border: 2px solid wheat;
+        padding: 24px;
+        background: #351a2a;
+    }
+
+    .divset {
+      /* overflow: hidden; */
+      height: 400px;
+      width: 400px;
+      /* margin: -20px auto; */
+      position: relative;
+      margin: 65px auto;
+  
+    
+      overflow: hidden;
+  }
+
+  .make-link {
+    position: absolute;
+    transform: rotate(-38deg);
+    top: 8%;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    left: -2%;
+}
+    svg.rotate-center {
+      /* display: none; */
+      position: absolute;
+      top: -8%;
+      width: 100%;
+      left: 60%;
+  }
+  .ganeshJee {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        /* margin-top: -513px; */
+        /* margin-left: -360px; */
+        transform: translate(-50%, -50%);
+      
+}
+svg.rotate-center {
+  /* display: none; */
+  position: absolute;
+  top: -9%;
+  width: 100%;
+  left: 59%;
+  transform: translate(-50%, -50%);
+  
+  /* display: none; */
+}
+
+.img_three {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+}
+.img_two {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 72%;
+}
+  }
