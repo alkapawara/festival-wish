@@ -58,7 +58,7 @@ section {
     width: 500px;
     margin: auto;
     border: 2px solid wheat;
-    padding: 24px;
+    padding: 8px 24px 24px;
     background: #ffffff;
 }
 
@@ -74,15 +74,27 @@ section {
     text-decoration: underline wavy var(--light-golden);
 }
 
-.login header {
+/* .login header {
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--light-golden);
     font-family: 'Monoton', cursive;
     margin-bottom: 2.5rem;
+} */
+.login header {
+  text-align: center;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: #88001f;
+  font-family: auto;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-bottom: 3px solid #ffd564;
+  /* border-top: 3px solid #ffbd60; */
+  padding-bottom: 8px;
 }
-
 .login .field {
     margin-block: 1.5rem;
 }
@@ -137,7 +149,9 @@ section {
     background-color: var(--transparent-golden);
     color: var(--light-golden);
 }
-
+.btn-right{
+  float: inline-end;
+}
 .login .create {
     margin-top: 2.5rem;
     line-height: 1.5rem;
@@ -515,14 +529,53 @@ svg.rotate-center {
   
 }
 @media only screen and (max-width:576px) {
-    .login {
-        margin: 1.5rem;
-        width: auto;
-        margin: auto;
-        border: 2px solid wheat;
-        padding: 24px;
-        background: #351a2a;
-    }
+  section {
+    display: inline-table;
+    /* place-content: flex-start; */
+    min-height: 100%;
+    color: white;
+    /* background-color: var(--dark-blue); */
+    /* margin: auto; */
+    justify-content: start;
+    align-items: start;
+    padding: 40px 5px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.login {
+  margin: 1.5rem;
+  width: 100%;
+  margin: auto;
+  border: 2px solid wheat;
+  padding: 24px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.login header {
+  text-align: center;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #88001f;
+  font-family: auto;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-bottom: 3px solid #ffd564;
+  /* border-top: 3px solid #ffbd60; */
+  padding-bottom: 8px;
+}
+    .login button {
+      padding: 0.55rem 1rem;
+      line-height: 1.5rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border: 2px solid var(--light-golden);
+      margin-top: 1.5rem;
+      background-color: var(--light-golden);
+      color: var(--dark-blue);
+      font-weight: 500;
+      cursor: pointer;
+  }
     .title-div {
       padding-bottom: 0px;
       padding-top: 17px;
